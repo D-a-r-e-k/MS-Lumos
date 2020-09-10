@@ -116,8 +116,9 @@ class FeatureRanker(object):
         output_columns = [Constants.feature, Constants.hazard_score, Constants.expected_failures,
                           Constants.actual_failures, Constants.count_delta, Constants.percent_delta]
 
-        stat_sig_features = feature_results[feature_results[Constants.is_stat_sig] == True][output_columns]
-        return stat_sig_features
+        print(feature_results)
+        #stat_sig_features = feature_results[feature_results[Constants.is_stat_sig] == True][output_columns]
+        return feature_results
 
     def __set_univar_frames(self, df_metric, df_metric_not_normalized, numerical_cols, target_col, add_null):
         """
