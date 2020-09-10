@@ -102,7 +102,7 @@ class FeatureBinGenerator(object):
 
     @staticmethod
     def get_feature_dummies(df: pd.DataFrame, feature_cols, target_col, add_null=True, p_thresh=.01,
-                            min_data_points=500, max_categories=5, apply_feature_target_metric_dependence_test=True):
+                            min_data_points=5, max_categories=256, apply_feature_target_metric_dependence_test=True):
         """
         Method to transform a dataframe wrt to a target variable to be used with classification models.
 
