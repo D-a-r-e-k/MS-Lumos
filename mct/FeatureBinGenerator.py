@@ -17,6 +17,7 @@ class FeatureBinGenerator(object):
     """
 
     def __init__(self):
+        print('initialize')
         self.__logger = logging.getLogger("mct")
         return
 
