@@ -20,6 +20,7 @@ class FeatureRanker(object):
         self.__config = config
         self.__bin_generator = FeatureBinGenerator()
         self.__logger = logging.getLogger("mct")
+        print('Initialize')
         return
 
     def compute_ranks(self, df_metric: pd.DataFrame, df_metric_not_normalized: pd.DataFrame,
