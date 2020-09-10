@@ -44,8 +44,9 @@ class FeatureRanker(object):
             sorted_feature = df_feature_ranking.sort_values(Constants.hazard_score, ascending=False, inplace=False)
 
         sorted_feature.reset_index(inplace=True, drop=True)
-
-        return sorted_feature
+        
+        return "TEST"
+        #return sorted_feature
 
     def __decompose_metric_univar(self, df_metric, df_metric_not_normalized, target_col, numerical_cols, add_null):
         """
